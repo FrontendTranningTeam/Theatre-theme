@@ -8,5 +8,9 @@
 @import 'base/images';
 
 @import 'vendors/bootstrap-override-variable';
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'font-awesome';
+
+@import 'components/button';
+@import 'components/form';
+@import 'components/heading';

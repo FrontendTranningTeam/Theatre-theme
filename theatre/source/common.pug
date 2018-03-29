@@ -1,0 +1,22 @@
+include modules/head/head
+include modules/common/button/button
+include modules/common/form/form
+include modules/common/heading/heading
+
+doctype html
+html
+  +head
+  body
+    +button-yellow('Contact Me')
+    +button-white('Hire Us Now')
+    +button-tag('fitness')
+    +button-tag('fitness')
+    +button-sns('facebook')
+    +button-sns('facebook')
+    +button-sns('facebook')
+    +button-sns('facebook')
+    +heading-h3('Comments (03)')
+    +heading('Comments (03)')
+    .container
+      +form-message
+    script(src="js/main.js")
