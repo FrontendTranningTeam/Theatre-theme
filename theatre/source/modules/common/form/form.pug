@@ -1,0 +1,23 @@
+mixin form-message
+  form.form
+    .form__wrapper
+      .row
+        .col-sm-6
+          input.form__input(type="text", placeholder="Your name")
+        .col-sm-6
+          input.form__input(type="email", placeholder="Your email")
+        .col-sm-12
+          input.form__input(type="text", placeholder="Subject")
+        .col-sm-12
+          textarea.form__input.form__input--comment(type="text", placeholder="Comment")
+
+mixin form-comment
+  form.form
+    .form__wrapper
+      .row
+        .col-sm-6
+          input.form__input(type="text", placeholder="Your name")
+        .col-sm-6
+          input.form__input(type="email", placeholder="Your email")
+        .col-sm-12
+          textarea.form__input.form__input--comment(type="text", placeholder="Comment")
