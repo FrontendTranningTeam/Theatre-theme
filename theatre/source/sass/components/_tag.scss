@@ -1,0 +1,29 @@
+.tag {
+  &__text {
+    font-family: $playfair;
+    font-style: italic;
+    color: $color_lightgrey1;
+    &--14 {
+      font-size: 14px;
+    }
+    &--18 {
+      font-size: 18px;
+    }
+    &--20 {
+      font-size: 20px;
+    }
+    &--24 {
+      font-size: 24px;
+    }
+    &--34 {
+      font-size: 34px;
+      color: $color_orange;
+    }
+  }
+  &__link {
+    &:hover {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}

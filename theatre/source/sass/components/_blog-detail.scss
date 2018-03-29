@@ -1,0 +1,424 @@
+.blog-header {
+  width: 100%;
+  height: 472px;
+  background: url('../images/blog-banner.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: $color_white;
+  position: relative;
+  @include respond-to ('tablet-and-down') {
+    height: 300px;
+  }
+  @include respond-to ('phone-and-down') {
+    height: 200px;
+  }
+  &__title {
+    font-family: $playfair;
+    font-size: 72px;
+    font-style: italic;
+    margin-bottom: 30px;
+    @include respond-to ('tablet-and-down') {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    @include respond-to ('phone-and-down') {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    &--bold {
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    font-family: $nunito;
+    font-style: italic;
+    letter-spacing: 2px;
+    @include respond-to ('phone-and-down') {
+      font-size: 12px;
+    }
+  }
+  &__wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.blog-article {
+  margin-top: 90px;
+  @include respond-to ('desktop-and-down') {
+    margin-top: 60px;
+  }
+  @include respond-to ('tablet-and-down') {
+    margin-top: 30px;
+  }
+}
+
+.blog-heading {
+  &__describe {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+  }
+  &__h1 {
+    font-size: 34px;
+    font-weight: 700;
+    font-family: $playfair;
+    color: $color_black;
+    text-align: center;
+    padding: 0 60px;
+    @include respond-to ('desktop-and-down') {
+      padding: 0;
+    }
+    @include respond-to ('tablet-and-down') {
+      font-size: 25px;
+    }
+  }
+  &__info {
+    text-align: center;
+    padding: 20px 0;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 25px;
+    @include respond-to ('tablet-and-down') {
+      margin-right: 10px;
+    }
+    &--orange {
+      color: $color_orange;
+    }
+  }
+  &__icon {
+    margin-right: 15px;
+    @include respond-to ('tablet-and-down') {
+      margin-right: 5px;
+    }
+  }
+}
+
+.blog-content {
+  &__pic {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: $color_white;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 1px solid $color_white;
+    @include respond-to ('desktop-and-down') {
+      width: 80px;
+      height: 80px;
+    }
+    @include respond-to ('tablet-and-down') {
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+    }
+    &:hover {
+      transition: 0.4s;
+      background-color: $color_orange;
+      border: 1px solid $color_orange;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+    font-size: 15px;
+    &--hightlight {
+      color: $color_orange;
+      text-decoration: underline;
+    }
+  }
+  &__quote {
+    font-size: 24px;
+    font-family: $playfair;
+    font-style: italic;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-left: 2px solid $color_orange;
+    margin: 60px 0 60px 70px;
+    padding: 0 30px;
+    @include respond-to ('tablet-and-down') {
+      margin: 30px 0 30px 50px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include respond-to ('smallphone-and-down') {
+      margin: 30px 0 30px 25px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.blog-sns {
+  padding: 80px 0;
+  border-bottom: 2px solid $color_lightgrey;
+  @include respond-to ('smallphone-and-down') {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  &__tag {
+    padding: 10px 0;
+  }
+  &__share {
+    float: right;
+    @include respond-to ('desktop-and-down') {
+      float: none;
+    }
+  }
+  &__text {
+    margin-right: 10px;
+  }
+}
+
+.blog-author {
+  border-bottom: 2px solid $color_lightgrey;
+  padding: 50px 0;
+  clear: both;
+  display: table;
+  &__wrapper {
+    text-align: center;
+  }
+  &__img {
+    border-radius: 5%;
+    width: 100px;
+    height: 100px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    color: $color_black;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-family: $playfair;
+    font-style: italic;
+    font-size: 15px;
+    padding: 0 90px;
+    line-height: 30px;
+    @include respond-to ('desktop-and-down') {
+      padding: 0;
+    }
+  }
+  &__sns {
+    margin-top: 30px;
+  }
+  &__item {
+    display: inline;
+    margin: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    &:hover {
+      transition: 0.4s;
+      color: $color_orange;
+      text-decoration: underline;
+    }
+  }
+}
+
+.blog-suggestion {
+  border-bottom: 2px solid $color_lightgrey;
+  padding: 60px 0;
+  @include respond-to ('tablet-and-down') {
+    padding: 30px 0;
+  }
+  @include respond-to ('phone-and-down') {
+    padding: 0;
+  }
+  &__link {
+    text-align: center;
+  }
+  &__pic {
+    margin-top: 40px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $playfair;
+    color: $color_black;
+    padding: 0 40px;
+    margin-top: 10px;
+    @include respond-to ('desktop-and-down') {
+      padding: 0;
+    }
+  }
+}
+.blog-comment {
+  border-bottom: 2px solid $color_lightgrey;
+  padding: 60px 0;
+  @include respond-to ('tablet-and-down') {
+    padding: 30px 0;
+  }
+  @include respond-to ('phone-and-down') {
+    padding: 0;
+  }
+}
+
+.blog-form {
+  clear: both;
+  margin: 90px 0;
+  @include respond-to ('tablet-and-down') {
+    margin: 60px 0;
+  }
+  @include respond-to ('phone-and-down') {
+    margin: 30px 0;
+  }
+  &__wrapper {
+    margin-top: 35px;
+  }
+}
+
+.blog-sidebar {
+  margin-top: 90px;
+  @include respond-to ('desktop-and-down') {
+    margin-top: 60px;
+  }
+}
+
+.blog-search {
+  margin-bottom: 90px;
+  @include respond-to ('tablet-and-down') {
+    display: none;
+  }
+  &__input {
+    float: left;
+    width: 80%;
+    background-color: $color_lightgrey;
+    border: 1px solid transparent;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    box-shadow: 0 0 0 0;
+    padding: 19px 12px;
+    &::placeholder {
+      font-size: 15px;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0;
+      outline: none;
+      border-color: transparent;
+    }
+    @include respond-to ('desktop-and-down') {
+      width: 70%;
+    }
+  }
+  &__append {
+    float: left;
+  }
+  &__btn {
+    background-color: $color_lightgrey;
+    border: 1px solid transparent;
+    border-radius: 0 40px 40px 0;
+    padding:  6px 10px;
+    font-size: 18px;
+    color: $color_orange;
+
+  }
+}
+
+.blog-category {
+  clear: both;
+  margin-bottom: 50px;
+  &__index {
+    margin: 20px 0;
+  }
+  &__fieldset {
+    border-top: 1px solid $color_lightgrey1;
+    width: 85%;
+    float: left;
+    @include respond-to ('desktop-and-down') {
+      width: 80%;
+    }
+  }
+  &__legend {
+    width: initial;
+    border: 0;
+    margin: 0;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  &__no {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+}
+
+.blog-popular {
+  margin-bottom: 30px;
+  &__wrapper {
+    margin-top: 30px;
+  }
+  &__link {
+    clear: both;
+    display: table;
+    margin-bottom: 20px;
+    &:hover {
+      .blog-popular__title {
+        transition: 0.4s;
+        color: $color_orange;
+      }
+    }
+  }
+  &__pic {
+    float: left;
+    width: 30%;
+  }
+  &__body {
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+    @include respond-to ('desktop-and-down') {
+      padding-left: 12px;
+    }
+    @include respond-to ('phone-and-down') {
+    padding-left: 0;
+    }
+  }
+  &__date {
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+    @include respond-to ('desktop-and-down') {
+      font-size: 12px;
+    }
+    @include respond-to ('phone-and-down') {
+      font-size: 14px;
+    }
+  }
+  &__title {
+    font-family: $playfair;
+    font-size: 16px;
+    color: $color_black;
+    font-weight: bold;
+    margin-top: 15px;
+    @include respond-to ('desktop-and-down') {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    @include respond-to ('phone-and-down') {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.blog-tag {
+  clear: both;
+  display: table;
+  padding-bottom: 30px;
+}
