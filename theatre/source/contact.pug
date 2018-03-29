@@ -1,0 +1,50 @@
+include modules/head/head
+include modules/common/button/button
+include modules/common/form/form
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head
+  body
+    +header-mobile
+    .body-wrapper
+      +header-logo-left
+      .contact-header
+        #map
+      .container
+        .contact-detail
+          .contact-detail__heading
+            h1.contact-detail__title Contact detail
+            h4.contact-detail__h4 HAVE A NEW PROJECT? WE'D LOVE TO HEAR FROM YOU
+          .row.contact-detail__wrapper
+            .col-sm-4
+              .contact-detail__icon
+                img.contact-detail__img(src="images/contact-icon1.png", alt="")
+              h3.contact-detail__h3 Hotline
+              p.contact-detail__text Phone 01:
+                span.contact-detail__text.contact-detail__text--bold +84 01122000
+              p.contact-detail__text Phone 01:
+                span.contact-detail__text.contact-detail__text--bold 1900 1080
+            .col-sm-4.contact-detail__address
+              .contact-detail__icon
+                img.contact-detail__img(src="images/contact-icon2.png", alt="")
+              h3.contact-detail__h3 Address
+              p.contact-detail__text 937 Abbot Kinney Blvd. Unit D, Venice
+            .col-sm-4
+              .contact-detail__icon
+                img.contact-detail__img(src="images/contact-icon3.png", alt="")
+              h3.contact-detail__h3 Email
+              p.contact-detail__text Contact@circle.com
+              p.contact-detail__text Support@circle_studio.com
+        .contact-form
+          h1.contact-form__title Leave us a message
+          h4.contact-form__h4 LET'S MAKE GREAT THINGS TOGETHER
+          .contact-form__form
+            +form-message
+            .contact-form__btn
+              +button-white('Submit')
+      +footer
+    script(src="js/main.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe4AF5K-7uHqSt9VnHYOhEZ2HLZN_UtVU&callback=initMap")
