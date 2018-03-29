@@ -15,6 +15,9 @@
       },{
         "title": "Blog-detail",
         "url": "blog-detail"
+      },{
+        "title": "Director-detail",
+        "url": "director-detail"
       }
     ]
   }
