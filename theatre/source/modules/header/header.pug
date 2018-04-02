@@ -1,0 +1,101 @@
+include ../common/button/button
+
+mixin header-logo-left
+  nav.navbar.navigation.navbar-default
+    .container-fluid
+      .navigation-bar
+        button.btn.navigation-bar__btn.js-nav-bar
+          i.fa.fa-bars
+      .navigation-logo
+        a.navbar-brand.navigation-logo__brand(href="#!")
+          img.navigation-logo__img(src="images/logo-detail.png", alt="")
+      .navigation-panel
+        ul.nav.navbar-nav.navigation-panel__nav.navbar-right
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab HOME
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab DIRECTOR
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab FILMS
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab GALLERY
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab PAGES
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab BLOG
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab CONTACT
+          .navigation-search
+            button.btn.navigation-search__btn.js-search-nav
+              i.fa.fa-search
+            .navigation-search__wrap
+              form.navigation-search__form
+                input.navigation-search__input(type="text", placeholder="search")
+
+mixin header-logo-center
+  nav.navbar.navigation.navbar-default
+    .container
+      .navigation-bar
+        button.btn.navigation-bar__btn.js-nav-bar
+          i.fa.fa-bars
+      .navigation-panel.navigation-panel--left
+        ul.nav.navbar-nav.navigation-panel__nav
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab HOME
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab DIRECTOR
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab FILMS
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab GALLERY
+      .navigation-panel.navigation-panel--center
+        a.navbar-brand.navigation-logo__brand.navigation-panel__logo(href="#!")
+          img.navigation-logo__img.navigation-panel__imgcenter(src="images/logo.png", alt="")
+      .navigation-panel.navigation-panel--right
+        ul.nav.navbar-nav.navigation-panel__nav
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab PAGES
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab BLOG
+          li.navigation-panel__item
+            a.navigation-panel__link(href="#!")
+              span.navigation-panel__tab CONTACT
+          .navigation-search
+            button.btn.navigation-search__btn.js-search-nav
+              i.fa.fa-search
+            .navigation-search__wrap
+              form.navigation-search__form
+                input.navigation-search__input(type="text", placeholder="search")
+
+mixin header-mobile
+  nav.header-mobile
+    ul.header-mobile__nav
+      li.header-mobile__item
+        button.btn.header-mobile__btn.js-button-x X
+      li.header-mobile__item
+        a.header-mobile__link(href="#!") HOME
+      li.header-mobile__item
+        a.header-mobile__link(href="#!") DIRECTOR
+      li.header-mobile__item
+        a.header-mobile__link(href="#!") FILMS
+      li.header-mobile__item
+        a.header-mobile__link(href="#!") GALLERY
+      li.header-mobile__item
+        a.header-mobile__link(href="#!") PAGES
+      li.header-mobile__item
+        a.header-mobile__link(href="#!") BLOG
+      li.header-mobile__item
+        a.header-mobile__link(href="#!") CONTACT

@@ -1,0 +1,12 @@
+include modules/head/head
+include modules/header/header
+
+doctype html
+html
+  +head
+  body
+    +header-mobile
+    .body-wrapper
+      +header-logo-left
+      +header-logo-center
+    script(src="js/main.js")
