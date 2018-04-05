@@ -18,6 +18,7 @@
 .button-yellow {
   @extend .button-white;
   background-color: $color_orange;
+  border: 1px solid $color_orange;
   color: $color_white;
   &:hover {
     background-color: $color_white;

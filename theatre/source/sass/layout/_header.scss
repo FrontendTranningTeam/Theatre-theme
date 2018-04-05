@@ -4,6 +4,10 @@
 
 .navigation {
   min-height: 117px;
+  border: none;
+  border-bottom: 1px solid $color_lightgrey1;
+  border-radius: 0;
+  background-color: $color_white;
   @include respond-to ('tablet-and-down') {
     min-height: 75px;
   }
@@ -151,10 +155,10 @@
       min-width: 100%;
       left: auto;
       right: 0;
-      top: 117px;
+      top: 114px;
     }
     @include respond-to ('smallphone-and-down') {
-      top: 93px;
+      top: 86px;
     }
   }
   &__btn {

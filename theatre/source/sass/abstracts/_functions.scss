@@ -7,7 +7,8 @@ $breakpoints: (
   'smallphone-and-down': (max-width: 575px),
   'phone-and-down': (max-width: 767px),
   'tablet-and-down': (max-width: 991px),
-  'desktop-and-down': (max-width: 1199px)
+  'desktop-and-down': (max-width: 1199px),
+  'desktopL-and-down': (max-width: 1439px)
 );
 @mixin respond-to($breakpoint) {
   $raw-query: map-get($breakpoints, $breakpoint);

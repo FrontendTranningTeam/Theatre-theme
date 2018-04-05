@@ -1,0 +1,182 @@
+include modules/head/head
+include modules/common/button/button
+include modules/header/header
+
+doctype html
+html
+  +head
+  body
+    +header-mobile
+    .body-wrapper
+      header.header-home
+        .header-home__wrapper
+          .header-home__layer
+          .header-home__text
+            h4.header-home__h4 Actor  / model
+            h1.header-home__h1 CONRNELIA LEWIS
+            +button-yellow('Contact Me')
+      +header-logo-center
+      section.talent-home
+        .container
+          .row
+            .col-sm-5.col-xs-12
+              .talent-home-left
+                .talent-home-left__wrapper
+                  .talent-home-left__layout
+                  .talent-home-left__layout-pic
+                    img.talent-home-left__img(src="images/talent3.jpg", alt="")
+                  .talent-home-left__pic
+                    img.talent-home-left__img(src="images/talent2.jpg", alt="")
+            .col-sm-7.col-xs-12.talent-home-pl-40
+              .talent-home-right
+                h1.talent-home-right__heading The Most Talented Young Actress in America
+                p.talent-home-right__text Nullam imperdiet, sem at fringilla lobortis, sem nibh fringilla nibh, id gravida mi purus sit amet erat. Ut dictum nisi massa, vitae pulvinar metus scelerisque in. Gravida mi purus sit amet erat. Ut dictum nisi massa, vitae pulvinar metus scelerisque in.
+                p.talent-home-right__text Nullam imperdiet, sem at fringilla lobortis, sem nibh fringilla nibh, id gravida mi purus sit amet erat. scelerisque in. lasem nibh fringilla nibh.
+                .row.talent-home-right__record
+                  .col-xs-4
+                    p.talent-home-right__number 1998
+                    p.talent-home-right__number 215
+                    p.talent-home-right__number 17
+                  .col-xs-8.talent-home-right__info
+                    p.talent-home-right__text
+                      span.talent-home-right__span FIRST STARRING
+                      span.talent-home-right__span FILM ROLE
+                    p.talent-home-right__text
+                      span.talent-home-right__span FIRST STARRING
+                      span.talent-home-right__span FILM ROLE
+                    p.talent-home-right__text
+                      span.talent-home-right__span FIRST STARRING
+                      span.talent-home-right__span FILM ROLE
+      section.quote-home
+        .container
+          .quote-home__wrapper
+            .quote-home__pic
+              img.quote-home__img(src="images/avar.jpg", alt="pic")
+            p.quote-home__mark "
+            h2.quote-home__text I think it's important people
+              span.quote-home__bold see themselves in film,
+              |  but it’s even more important they
+              span.quote-home__bold see people they maybe don’t know as well.
+            h3.quote-home__author BRYAN FREEMAN
+            h4.quote-home__position Partner / Director
+      section.story-home
+        .story-home__wrapper
+          .story-home__border
+          .story-home__center-block
+            span.story-home__text MY
+            button.story-home__btn
+              i.fa.fa-play
+            span.story-home__text STORY
+      section.feature-home
+        .container
+          h1.feature-home__heading My featured films
+          h2.feature-home__describe WE WILL TO DEVELOP YOUR FILM, YOUR TALENT
+          .row
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+      aside.hire-home
+        .container
+          .row
+            .col-md-7.col-sm-12
+              p.hire-home__text Let's make great things together!
+            .col-md-5.col-sm-12.hire-home__btn
+              +button-white('View More')
+              +button-yellow('Hire Us Now')
+      section.insta-home
+        .container
+          h1.insta-home__heading Follow me on instagram
+          h4.insta-home__title @ Cornelia_Lewis
+          .row.insta-home__gallery
+            p.insta-home__left-text INSTAGRAM
+            p.insta-home__right-text @CORNELIA_LEWIS
+            .col-md-6.col-sm-12.insta-home__p-0
+              .col-md-12.col-xs-12.insta-home__p-0
+                a(href="#!")
+                  img.insta-home__img(src="images/ins2.jpg", alt="")
+              .col-md-6.col-xs-6.insta-home__p-0.text-right
+                a(href="#!")
+                  img.insta-home__img(src="images/ins.jpg", alt="")
+              .col-md-6.col-xs-6.insta-home__p-0.text-left
+                a(href="#!")
+                  img.insta-home__img(src="images/ins.jpg", alt="")
+            .col-md-6.col-sm-12.insta-home__p-0
+              .col-md-6.col-xs-6.insta-home__p-0.text-right
+                a(href="#!")
+                  img.insta-home__img(src="images/ins.jpg", alt="")
+              .col-md-6.col-xs-6.insta-home__p-0.text-left
+                a(href="#!")
+                  img.insta-home__img(src="images/ins.jpg", alt="")
+              .col-md-6.col-xs-6.insta-home__p-0.text-right
+                a(href="#!")
+                  img.insta-home__img(src="images/ins.jpg", alt="")
+              .col-md-6.col-xs-6.insta-home__p-0.text-left
+                a(href="#!")
+                  img.insta-home__img(src="images/ins.jpg", alt="")
+      section.contact-home
+        .container
+          .col-sm-5.col-xs-12
+            .contact-home__wrapper
+              .contact-home__pic
+                img.contact-home__img(src="images/home-contact.jpg", alt="")
+              .contact-home__layer
+              .contact-home__circle.contact-home__circle--lg
+              .contact-home__circle.contact-home__circle--md
+              .contact-home__circle.contact-home__circle--sm
+          .col-sm-7.col-xs-12.contact-home__info
+            p.contact-home__text HAVE A NEW PROJECT? SEND ME A MESSAGE AT
+            h1.contact-home__mail lornelia_lewis@gmail.com
+            .contact-home__btn
+              +button-sns('facebook')
+              +button-sns('twitter')
+              +button-sns('instagram')
+              +button-sns('youtube-play')
+              +button-sns('vimeo')
+      footer.footer-bottom.container
+        .row
+          .col-md-8.col-sm-12
+            p.footer-bottom__text Copyright &copy; 2017
+              span.footer-bottom__text.footer-bottom__text--bold Circlestudio
+              |  - All Rights Reserved
+          .col-md-4.col-sm-12
+            ul.footer-bottom__tab
+              li.footer-bottom__item
+                a.footer-bottom__link(href="#!") CONTACT DETAIL
+              li.footer-bottom__item
+                a.footer-bottom__link(href="#!") CLIENTS
+              li.footer-bottom__item
+                a.footer-bottom__link(href="#!") SERVICES
+    script(src="js/main.js")
