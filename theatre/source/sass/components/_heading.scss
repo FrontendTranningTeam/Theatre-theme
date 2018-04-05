@@ -4,8 +4,15 @@
   font-weight: 900;
   margin-left: 25px;
   position: relative;
+  color: $color_black;
+  @include respond-to ('phone-and-down') {
+    font-size: 24px;
+  }
   &--h3{
     font-size: 24px;
+    @include respond-to ('phone-and-down') {
+      font-size: 18px;
+    }
   }
   &::before {
     content: "/";

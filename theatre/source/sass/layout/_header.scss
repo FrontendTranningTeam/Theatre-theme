@@ -8,6 +8,7 @@
   border-bottom: 1px solid $color_lightgrey1;
   border-radius: 0;
   background-color: $color_white;
+  margin-bottom: 0;
   @include respond-to ('tablet-and-down') {
     min-height: 75px;
   }

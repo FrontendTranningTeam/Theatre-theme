@@ -9,6 +9,12 @@
       },{
         "title": "common",
         "url": "common"
+      },{
+        "title": "Home-actor",
+        "url": "index"
+      },{
+        "title": "Blog-detail",
+        "url": "blog-detail"
       }
     ]
   }

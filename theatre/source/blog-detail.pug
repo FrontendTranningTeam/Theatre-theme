@@ -1,0 +1,174 @@
+include modules/head/head
+include modules/common/button/button
+include modules/common/form/form
+include modules/common/heading/heading
+include modules/common/tag/tag
+include modules/header/header
+include modules/footer/footer
+include modules/comment-block/comment-block
+
+doctype html
+html
+  +head
+  body
+    +header-mobile
+    .body-wrapper
+      +header-logo-left
+      .blog-header
+        .blog-header__wrap
+          h1.blog-header__title Our
+            span.blog-header__title.blog-header__title--bold Blog
+          h4.blog-header__text HOME / OUR BLOG
+      .container
+        .row
+          .col-sm-9.blog-article
+            .blog-heading
+              h4.blog-heading__describe MUSIC VIDEO
+              h1.blog-heading__h1 Obituary Writers at the New York Times Discuss Their Craft
+              .blog-heading__info
+                a(href="#!")
+                  p.blog-heading__item
+                    i.blog-heading__icon.fa.fa-user
+                    span.blog-heading__item--orange Connie Wilson
+                p.blog-heading__item
+                  i.blog-heading__icon.fa.fa-calendar-o
+                  | 20 Aug, 2017
+                p.blog-heading__item
+                  i.blog-heading__icon.fa.fa-commenting
+                  | 0 Comment
+
+            .blog-content
+              .blog-content__pic
+                img.blog-content__img(src="images/blog-detail-pic.jpg", alt="")
+                button.blog-content__btn
+                  i.fa.fa-play
+              p.blog-content__text Nullam imperdiet, sem at fringilla lobortis, sem nibh fringilla nibh, idae gravida mi purus sit amet erat. Ut dictum nisi massa.Maecenas id justo rhoncus, volutpat nunc sit amet, facilisiulum scelerisque dictum Maecenas id justo rhoncus, volutpat nunc sit amet, facilisis sem. Vestibulum scelerisque dictsap
+              p.blog-content__quote I think it's important people see themselves in film, but it’s even more important they see people they maybe don’t know as well.
+              p.blog-content__text Fusce eget malesuada eros. Vivamus eros dolor, auctor aliquet dolor sit amet, euismod imperdiet ex. Nam sed nulla sed massa suscipit feugiat. Mauris et nunc ornare, placerat ex ac, interdum magna. Vestibulum urna massa, hendrerit sed fringilla in, mollis vitae tellus. Vestibulum mattis nulla elementum tristique fringilla. Morbi in sollicitudin erat. Ut quis tristique mauris. Proin risus purus, iaculis a orci ut,
+                span.blog-content__text.blog-content__text--hightlight cursus bibendum panisl.
+                |  Duis aliquam gravida eros eget molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pharetra, arcu eu porta aliquet, eros dui tincidunt purus, eu vehicula magna nisl in purus.
+
+              p.blog-content__text Vivamus eros dolor, auctor aliquet dolor sit amet, euismod imperdiet ex. Nam sed nulla sed massa suscipit feugiat. Mauris et nunc ornare, placerat ex ac, interdum magna. Vestibulum urna massa, hemolli
+
+            .blog-sns
+              .col-md-6
+                p.blog-sns__tag
+                  span.blog-sns__text TAGS:
+                  +button-tag('fitness')
+                  +button-tag('fitness')
+                  +button-tag('fitness')
+              .col-md-6
+                p.blog-sns__share
+                  span.blog-sns__text SHARE
+                  +button-sns('facebook')
+                  +button-sns('twitter')
+                  +button-sns('instagram')
+
+            .blog-author
+              .blog-author__wrapper
+                img.blog-author__img(src="images/avar.jpg", alt="")
+                h2.blog-author__name BRYAN FREEMAN
+                p.blog-author__title Mauris et nunc ornare, placerat ex ac, interdum magna. Vestibulum urna massa, hendrerit sed fringilla in. Morbi in sollicitudin erat. Ut quis tristique mauris
+                .blog-author__sns
+                  ul.blog-author__tab
+                    li.blog-author__item
+                      a.blog-author__link(href="#!") FACEBOOK
+                    li.blog-author__item
+                      a.blog-author__link(href="#!") TWITTER
+                    li.blog-author__item
+                      a.blog-author__link(href="#!") INSTAGRAM
+
+            .blog-suggestion
+              +heading('You might also like')
+              .row
+                .col-sm-6
+                  a.blog-suggestion__link(href="#!")
+                    .blog-suggestion__pic
+                      img.blog-suggestion__img(src="images/blog-large.jpg", alt="")
+                    h4.blog-suggestion__subtitle LIFESTYLE
+                    h2.blog-suggestion__title 10 Steps to Writing the Perfect Prospectus
+                .col-sm-6
+                  a.blog-suggestion__link(href="#!")
+                    .blog-suggestion__pic
+                      img.blog-suggestion__img(src="images/blog-large.jpg", alt="")
+                    h4.blog-suggestion__subtitle LIFESTYLE
+                    h2.blog-suggestion__title 10 Steps to Writing the Perfect Prospectus
+            .blog-comment
+              +heading('Comments (03)')
+              +comment-block
+              +reply-block
+              +comment-block
+
+            .blog-form
+              +heading('Write a comment')
+              .blog-form__wrapper
+                +form-comment
+                +button-white('Submit')
+
+          .col-sm-3.blog-sidebar
+            .blog-search
+              .blog-search__wrapper
+                input(type="text", placeholder="Search...").blog-search__input.form-control
+                .blog-search__append
+                  button.blog-search__btn
+                    i.fa.fa-search
+
+            .blog-category
+              +heading-h3('Categories')
+              .blog-category__index
+                fieldset.blog-category__fieldset
+                  legend.blog-category__legend Lifestyle
+                span.blog-category__no 06
+              .blog-category__index
+                fieldset.blog-category__fieldset
+                  legend.blog-category__legend Film reviews
+                span.blog-category__no 07
+
+              .blog-category__index
+                fieldset.blog-category__fieldset
+                  legend.blog-category__legend Mussic video
+                span.blog-category__no 07
+
+              .blog-category__index
+                fieldset.blog-category__fieldset
+                  legend.blog-category__legend Soundtrack
+                span.blog-category__no 07
+
+              .blog-category__index
+                fieldset.blog-category__fieldset
+                  legend.blog-category__legend Film reviews
+                span.blog-category__no 12
+
+            .blog-popular
+              +heading-h3('Most Popular')
+              .blog-popular__wrapper
+                a.blog-popular__link(href="#!")
+                  .blog-popular__pic
+                    img.blog-popular__img(src="images/blog-small.jpg", alt="")
+                  .blog-popular__body
+                    h5.blog-popular__date 20 Aug, 2017
+                    h3.blog-popular__title Ipecac on Must See Movies Of The Week
+                a.blog-popular__link(href="#!")
+                  .blog-popular__pic
+                    img.blog-popular__img(src="images/blog-small.jpg", alt="")
+                  .blog-popular__body
+                    h5.blog-popular__date 20 Aug, 2017
+                    h3.blog-popular__title Ipecac on Must See Movies Of The Week
+                a.blog-popular__link(href="#!")
+                  .blog-popular__pic
+                    img.blog-popular__img(src="images/blog-small.jpg", alt="")
+                  .blog-popular__body
+                    h5.blog-popular__date 20 Aug, 2017
+                    h3.blog-popular__title Ipecac on Must See Movies Of The Week
+                a.blog-popular__link(href="#!")
+                  .blog-popular__pic
+                    img.blog-popular__img(src="images/blog-small.jpg", alt="")
+                  .blog-popular__body
+                    h5.blog-popular__date 20 Aug, 2017
+                    h3.blog-popular__title Ipecac on Must See Movies Of The Week
+
+            .blog-tag
+              +heading-h3('Popular Tags')
+              +tag
+      +footer
+    script(src="js/main.js")
