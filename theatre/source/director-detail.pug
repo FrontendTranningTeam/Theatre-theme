@@ -1,0 +1,161 @@
+include modules/head/head
+include modules/common/button/button
+include modules/common/form/form
+include modules/common/heading/heading
+include modules/common/tag/tag
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head
+  body
+    +header-mobile
+    .body-wrapper
+      +header-logo-left
+      .director-banner
+        .director-banner__wrapper
+          .container
+            .row
+              .col-sm-6.director-banner__pic
+                img.director-banner__img(src="images/director_avar.jpg", alt="")
+              .col-sm-6.director-banner__body
+                h4.director-banner__position Director
+                h1.director-banner__name JOSEPH PERKINS
+                .row.lala
+                  .director-banner__info.col-lg-3.col-md-4.col-xs-5
+                    p.director-banner__text
+                      img.director-banner__icon(src="images/director-icon1.png", alt="")
+                      span Date of Birth
+                    p.director-banner__text
+                      img.director-banner__icon(src="images/director-icon2.png", alt="")
+                      span Birth Name
+                    p.director-banner__text
+                      img.director-banner__icon(src="images/director-icon3.png", alt="")
+                      span Height
+                  .director-banner__info-detail.col-lg-9.col-md-8.col-xs-7
+                    p.director-banner__text 18 December 1976 Cincinnati, Ohio, USA
+                    p.director-banner__text Joseph Allan Perkins
+                    p.director-banner__text 5' 7 ½" (1.71 m)
+                +button-sns('facebook')
+                +button-sns('twitter')
+                +button-sns('vimeo')
+                +button-sns('youtube-play')
+      .container
+        .row
+          .col-md-9.director-article
+            .director-story
+              +heading('Director Story')
+              .director-story__wrapper
+                p.director-story__text Nullam imperdiet, sem at fringilla lobortis, sem nibh fringilla nibh, idae gravida mi purus sit amet erat. Ut dictum nisi massa.Maecenas id justo rhoncus, volutpat nunc sit amet, facilisiulum scelerisque dictum Maecenas id justo rhoncus, volutpat nunc sit amet, facilisis sem. Vestibulum scelerisque dictsap
+                p.director-story__text Etiam eu libero vestibulum ante finibus hendrerit. Donec ac risus consectetur lorem volutpat tempus et sed sem. Proin mo eales tie scelerisque tortor et imperdiet. Vestibulum tempor ut enim commodo ec ac risus con condim entum ec ac risus conullam imperdiet, sem at fringilla lobortis, sem nibh fringilla nibh, idae gravida mi purus sit amet erat. Ut dictum nisi massa.Maecenas id justo rhoncus, volutpat nunc sit amet, facilisiulum scelerisque dictum Maecenas id justo rhoncus, volutpat nunc sit amet, facilisis sem. Vestibulum scelerisque dictsap
+
+            .director-award
+              +heading('Awards')
+              .row.director-award__wrapper
+                .col-md-6
+                  p.director-award__text Best Cinematography
+                  p.director-award__text Best Photography
+                  p.director-award__text International Short Film
+
+                .col-md-6
+                  p.director-award__text Best Cinematography
+                  p.director-award__text Best Photography
+                  p.director-award__text International Short Film
+
+            .director-education
+              +heading('Education')
+              .director-education__wrapper
+                p.director-education__title 2012-2014
+                  span.director-education__describe Master of Arts in Cinematography – Hamburg Media School)
+                p.director-education__title 2012-2014
+                  span.director-education__describe Master of Arts in Cinematography – Hamburg Media School)
+                p.director-education__title 2012-2014
+                  span.director-education__describe Master of Arts in Cinematography – Hamburg Media School)
+                p.director-education__title 2012-2014
+                  span.director-education__describe Master of Arts in Cinematography – Hamburg Media School)
+
+          .col-md-3.director-sidebar
+            .blog-search
+              .blog-search__wrapper
+                input(type="text", placeholder="Search...").blog-search__input.form-control
+                .blog-search__append
+                  button.blog-search__btn
+                    i.fa.fa-search
+
+            .director-more
+              +heading-h3('More directors')
+              .row.director-more__row
+                .col-xs-4.p-0
+                  a.director-more__link(href="#!")
+                    .director-more__wrapper
+                      .director-more__layer
+                      p.director-more__btn +
+                      img.director-more__img(src="images/director_small.jpg", alt="")
+                .col-xs-4.p-0
+                  a.director-more__link(href="#!")
+                    .director-more__wrapper
+                      .director-more__layer
+                      p.director-more__btn +
+                      img.director-more__img(src="images/director_small.jpg", alt="")
+                .col-xs-4.p-0
+                  a.director-more__link(href="#!")
+                    .director-more__wrapper
+                      .director-more__layer
+                      p.director-more__btn +
+                      img.director-more__img(src="images/director_small.jpg", alt="")
+                .col-xs-4.p-0
+                  a.director-more__link(href="#!")
+                    .director-more__wrapper
+                      .director-more__layer
+                      p.director-more__btn +
+                      img.director-more__img(src="images/director_small.jpg", alt="")
+                .col-xs-4.p-0
+                  a.director-more__link(href="#!")
+                    .director-more__wrapper
+                      .director-more__layer
+                      p.director-more__btn +
+                      img.director-more__img(src="images/director_small.jpg", alt="")
+                .col-xs-4.p-0
+                  a.director-more__link(href="#!")
+                    .director-more__wrapper
+                      .director-more__layer
+                      p.director-more__btn +
+                      img.director-more__img(src="images/director_small.jpg", alt="")
+            .director-tag
+              +heading-h3('Popular Tags')
+              +tag
+
+      .director-films
+        .container
+          +heading('My featured films')
+          .row.director-films__wrapper
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+            .col-md-4
+              a.feature-home__link(href="#!")
+                .feature-home__pic
+                  img.feature-home__img(src="images/feature.jpg", alt="")
+                h3.feature-home__title Seventeenth Summer
+                h3.feature-home__subtitle MUSIC VIDEO
+
+      .director-contact.hire-home
+        .container
+          .row
+            .col-md-7.col-sm-12
+              p.hire-home__text.director-contact__text Let's make great things together!
+            .col-md-5.col-sm-12.hire-home__btn
+              +button-white('View More')
+              +button-yellow('Contact me')
+      +footer
+    script(src="js/main.js")

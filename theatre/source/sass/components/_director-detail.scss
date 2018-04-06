@@ -1,0 +1,196 @@
+.director-banner {
+  &__wrapper {
+    height: 540px;
+    background: url('../images/director-banner_1.jpg') no-repeat;
+    background-size: cover;
+    @include respond-to ('tablet-and-down') {
+      height: 440px;
+    }
+    @include respond-to ('phone-and-down') {
+      height: auto;
+    }
+  }
+  &__pic {
+    margin-top: 100px;
+    @include respond-to ('desktopL-and-down') {
+      margin-top: 150px;
+    }
+    @include respond-to ('tablet-and-down') {
+      margin-top: 70px;
+    }
+    @include respond-to ('phone-and-down') {
+      text-align: center;
+    }
+  }
+  &__body {
+    margin-top: 100px;
+    padding: 40px 15px;
+    color: $color_white;
+    @include respond-to ('desktopL-and-down') {
+      margin-top: 130px;
+    }
+    @include respond-to ('tablet-and-down') {
+      margin-top: 35px;
+    }
+    @include respond-to ('phone-and-down') {
+      margin-top: 0;
+      padding: 25px 15px;
+    }
+  }
+  &__position {
+    font-family: $playfair;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-style: italic;
+    @include respond-to ('phone-and-down') {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  &__name {
+    font-size: 48px;
+    margin-bottom: 35px;
+    @include respond-to ('desktop-and-down') {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
+    @include respond-to ('phone-and-down') {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  &__info{
+    font-size: 15px;
+    color: $color_lightgrey1;
+    margin-bottom: 20px;
+  }
+  &__text {
+    padding: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include respond-to ('phone-and-down') {
+      padding: 2px 0;
+      font-size: 12px;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &__info-detail {
+    margin-bottom: 20px;
+  }
+}
+
+.director-article {
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.director-story {
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__wrapper {
+    margin-top: 40px;
+  }
+}
+
+.director-award {
+  &__text {
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    margin-top: 40px;
+  }
+}
+
+.director-education {
+  &__describe {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  &__wrapper {
+    margin-top: 40px;
+  }
+}
+
+.director-sidebar {
+  margin-top: -40px;
+  @include respond-to ('tablet-and-down') {
+    margin-top: 0;
+  }
+}
+
+.director-more {
+  &__row {
+    margin: 30px 0;
+  }
+  &__wrapper {
+    margin-bottom: 10px;
+    position: relative;
+    @include respond-to ('desktopL-and-down') {
+      padding-right: 10px;
+    }
+  }
+  &__layer {
+    position: absolute;
+    width: 92%;
+    height: 100%;
+    background-color: $color_blackblur;
+    display: none;
+    z-index: 1;
+    @include respond-to ('desktopL-and-down') {
+      width: 86%;
+    }
+    @include respond-to ('tablet-and-down') {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  &__btn {
+    position: absolute;
+    color: $color_orange;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    font-family: $playfair;
+    display: none;
+    z-index: 2;
+    @include respond-to ('tablet-and-down') {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  &__link {
+    &:hover {
+      .director-more__layer,
+      .director-more__btn {
+        display: block;
+      }
+    }
+  }
+}
+
+.director-films {
+  background-color: $color_lightgrey;
+  margin-top: 60px;
+  padding: 40px 0;
+  &__wrapper {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+.director-contact {
+  background: url('../images/director-banner_1.jpg') no-repeat;
+  background-size: cover;
+  &.director-contact {
+    margin: 0;
+  }
+  &__text.director-contact__text {
+    color: $color_white;
+  }
+}
