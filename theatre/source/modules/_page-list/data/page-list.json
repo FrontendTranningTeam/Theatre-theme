@@ -18,6 +18,9 @@
       },{
         "title": "Director-detail",
         "url": "director-detail"
+      },{
+        "title": "Contact",
+        "url": "contact"
       }
     ]
   }
